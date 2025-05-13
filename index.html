@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Gutom - Authentic Filipino Cuisine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="py-3 border-bottom sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo-text text-decoration-none">
+                Anti Gutom
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="bi bi-cart3"></i> Cart <span class="badge bg-dark cart-count ms-1">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4">Authentic Filipino Flavors</h1>
+            <p class="lead">Freshly prepared, delivered to your doorstep.</p>
+            <a href="products.html" class="btn btn-primary btn-lg">View Our Menu</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Featured Dishes</h2>
+            <div class="row gy-4" id="featured-products-container">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">What Our Customers Say</h2>
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <p class="card-text fst-italic">Legit ito, bili na kayo!</p>
+                            <footer class="text-end pt-2">- Janel V.</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <p class="card-text fst-italic">Love their products! Highly recommend.</p>
+                            <footer class="text-end pt-2">- Hezekiah J.</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <p class="card-text fst-italic">Ang sarap ng sinigang nila!</p>
+                            <footer class="text-end pt-2">- Aryana G.</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 mt-auto">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="mb-1 footer-title">Anti Gutom</h5>
+                <p class="mb-2 small text-muted footer-tagline">Authentic Filipino Cuisine</p>
+                <p class="mb-1 small footer-contact">
+                    <i class="bi bi-telephone-fill me-1"></i> +63 910 736 3108
+                    <span class="mx-2 d-none d-sm-inline">|</span>
+                    <i class="bi bi-envelope-fill ms-sm-2 me-1"></i> order@antigutom.ph
+                </p>
+                <div class="mb-3 footer-social">
+                     <a href="https://www.facebook.com/janel.valdez.7902" target="_blank" class="text-muted me-2 fs-5"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.instagram.com/jnllvldz?igsh=ZWxtMDF6dnZiNjM1" target="_blank" class="text-muted me-2 fs-5"><i class="bi bi-instagram"></i></a>
+                     <a href="https://www.tiktok.com/@hnpnmpkko?_t=ZS-8wIErvT1edQ&_r=1" target="_blank" class="text-muted fs-5"><i class="bi bi-tiktok"></i></a>
+                </div>
+                <p class="small text-muted mb-0 footer-copyright">© <span id="current-year"></span> Anti Gutom. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
